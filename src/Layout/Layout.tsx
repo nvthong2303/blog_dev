@@ -4,6 +4,7 @@ import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { makeStyles } from '@mui/styles'
 import { Box, Grid } from '@mui/material'
+import { getWindowSize } from '../Common/Size'
 
 const useStyles = makeStyles({
   root: {
@@ -20,12 +21,24 @@ const useStyles = makeStyles({
 
 const Layout = ({ children }: any) => {
   const classes = useStyles()
-  const widthScreen = window.innerWidth
+  const [windowSize, setWindowSize] = React.useState(getWindowSize())
+
+  React.useEffect(() => {
+    function handleWindowResize () {
+      setWindowSize(getWindowSize())
+    }
+
+    window.addEventListener('resize', handleWindowResize)
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize)
+    }
+  }, [])
 
   return (
     <div className={classes.root}>
       <Header />
-      {widthScreen > 480 ? (
+      {windowSize.innerWidth > 480 ? (
         <Grid container spacing={0} className={classes.body}>
           <Grid item xs={2.5}>
             <Navbar fullWidth={false} />

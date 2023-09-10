@@ -18,25 +18,17 @@ const useStyles = makeStyles({
 })
 
 const lists = [
-  // {
-  //     id: 0,
-  //     title: 'Test markdown',
-  //     description: 'using template markdown',
-  //     md_name: '../Contents/test.MD',
-  //     author: 'thong.nguyen van',
-  //     date: 'September 04, 2023',
-  //     content: "\r\nHey Everyone! *My blog is better than Dave's.*\r\n\r\nYou may know me from my other blog, \"No Sleep Till Deployment\", which is all about my life as a senior developer at a large tech company.\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OH35UAqHLi0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-  // },
   {
     id: 'event-loop-in-javascript',
     title: 'Event Loop trong JavaScript - Cách JavaScript xử lý bất đồng bộ',
-    description:
-      'Một trong những điều quan trọng mà các lập trình viên JavaScript cần phải nắm được, mặc dù không dễ để tiếp cận thông qua lý thuyết hay những đoạn code, nhưng dễ hiểu hơn khi mô tả hoạt động của nó thông qua hình ảnh',
-    md_name: '../Contents/eventloop.MD',
     author: 'thong.nguyen van',
-    date: 'September 04, 2023',
-    content:
-      '\r\nHey Everyone! *My blog is better than Dave\'s.*\r\n\r\nYou may know me from my other blog, "No Sleep Till Deployment", which is all about my life as a senior developer at a large tech company.\r\n\r\n<iframe width="560" height="315" src="https://www.youtube.com/embed/OH35UAqHLi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    date: 'September 04, 2023'
+  },
+  {
+    id: 'index-sql-part1',
+    title: 'Chỉ mục (Index) trong SQL - Part 1',
+    author: 'thong.nguyen van',
+    date: 'September 09, 2023'
   }
 ]
 
@@ -50,10 +42,6 @@ const components = {
 
 function Home () {
   const classes = useStyles()
-
-  const excerptList = lists.map(post => {
-    return post.content.split(' ').slice(0, 20).join(' ') + '...'
-  })
 
   return (
     <Layout>

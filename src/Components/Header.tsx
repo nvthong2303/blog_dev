@@ -20,6 +20,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import { TransitionProps } from '@mui/material/transitions'
 
 import Navbar from './Navbar'
+import { getWindowSize } from '../Common/Size'
 
 const useStyles = makeStyles({
   root: {
@@ -81,6 +82,19 @@ const Transition = React.forwardRef(function Transition (
 function Header () {
   const classes = useStyles()
   const [open, setOpen] = React.useState(false)
+  const [windowSize, setWindowSize] = React.useState(getWindowSize())
+
+  React.useEffect(() => {
+    function handleWindowResize () {
+      setWindowSize(getWindowSize())
+    }
+
+    window.addEventListener('resize', handleWindowResize)
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize)
+    }
+  }, [])
 
   const handleClickOpen = () => {
     setOpen(true)
@@ -103,7 +117,7 @@ function Header () {
           techieGuy
         </Typography>
       </Button>
-      {window.innerWidth > 480 ? (
+      {windowSize.innerWidth > 480 ? (
         <Box className={classes.rightIcon}>
           <a
             href='https://github.com/nvthong2303'

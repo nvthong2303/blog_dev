@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   root: {
     marginTop: '60px',
     width: '100%',
+    maxWidth: '100% !important',
     minHeight: '100vh',
     marginBottom: '0',
     padding: '24px',
@@ -18,9 +19,9 @@ const useStyles = makeStyles({
   }
 })
 
-function Blog0 () {
+function Blog1 () {
   const classes = useStyles()
-  const file_name = 'eventloop.md'
+  const file_name = 'indexSql.md'
   const [post, setPost] = React.useState('')
   const navigate = useNavigate()
 
@@ -52,4 +53,4 @@ function Blog0 () {
   )
 }
 
-export default Blog0
+export default Blog1

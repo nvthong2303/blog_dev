@@ -7,19 +7,40 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 
 import avatarSrc from '../Assets/s1.PNG'
+import StreetCart from '../Assets/streetcart.png'
 
 const useStyles = makeStyles({
   root: {
+    '@media screen and (min-width: 480px) and (max-width: 1199px)': {
+      padding: '24px 8px'
+    },
+    '@media screen and (min-width: 1200px)': {
+      padding: '32px'
+    },
     marginTop: '60px',
     width: '100%',
     minHeight: '100vh',
-    padding: '32px',
     boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     borderLeft: '1.5px solid #dee2e6',
-    backgroundColor: '#f0f8ff'
+    backgroundColor: '#f0f8ff',
+    textAlign: 'center'
+  },
+  avatar: {
+    '@media screen and (max-width: 480px)': {
+      marginTop: '80px !important'
+    }
+    // '@media screen and (max-width: 480px)': {},
+    // '@media screen and (min-width: 480px) and (max-width: 1199px)': {
+    //   width: 160,
+    //   height: 160
+    // },
+    // '@media screen and (min-width: 1200px)': {
+    //   width: '160px',
+    //   height: '160px'
+    // }
   }
 })
 
@@ -33,11 +54,12 @@ function Navbar (props: any) {
       style={{ marginTop: fullWidth ? '0px' : '60px' }}
     >
       <Avatar
+        className={classes.avatar}
         alt='nvthong2303 :D'
         src={avatarSrc}
         sx={{
-          width: 160,
-          height: 160,
+          width: fullWidth ? 80 : '90%',
+          height: fullWidth ? 80 : '90%',
           border: '1.5px solid #dee2e6',
           zIndex: 0
         }}
@@ -60,7 +82,7 @@ function Navbar (props: any) {
           <IconButton
             sx={{ color: '#000000' }}
             aria-label='delete'
-            size='small'
+            size={fullWidth ? 'large' : 'small'}
           >
             <GitHubIcon fontSize='inherit' />
           </IconButton>
@@ -73,7 +95,7 @@ function Navbar (props: any) {
           <IconButton
             sx={{ color: '#2374e1' }}
             aria-label='delete'
-            size='small'
+            size={fullWidth ? 'large' : 'small'}
           >
             <FacebookIcon fontSize='inherit' />
           </IconButton>
@@ -86,7 +108,7 @@ function Navbar (props: any) {
           <IconButton
             sx={{ color: '#0a66c2' }}
             aria-label='delete'
-            size='small'
+            size={fullWidth ? 'large' : 'small'}
           >
             <LinkedInIcon fontSize='inherit' />
           </IconButton>
@@ -99,7 +121,7 @@ function Navbar (props: any) {
           <IconButton
             sx={{ color: '#000000' }}
             aria-label='delete'
-            size='small'
+            size={fullWidth ? 'large' : 'small'}
           >
             <EmailIcon fontSize='inherit' />
           </IconButton>
