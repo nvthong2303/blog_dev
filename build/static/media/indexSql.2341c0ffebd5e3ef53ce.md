@@ -2,7 +2,7 @@
 
 _Đây không phải là 1 chủ để mới mẻ với các bạn Lập trình viên Backend đã có kinh nghiệm, nhưng là chủ để quan trọng khi các bạn lập trình phía backend. Hy vọng nó sẽ giúp đỡ các bạn mới có thể tìm được 1 điều gì đó phần này này, Cảm ơn đã ghé thăm😉😉😉_
 
-<img src="https://codelearn.io/Upload/Blog/Index-Database-63734836761.1593.jpg"  width="100%" height="auto">
+<img src="https://codelearn.io/Upload/Blog/Index-Database-63734836761.1593.jpg"  width="80%" height="auto">
 
 ### 1. Tại sao phải có Index ?
 
@@ -12,7 +12,7 @@ Tuy nhiên, trên thực tế khi cơ sở dữ liệu của bạn trở nên qu
 
 ### 2. Index là gì ?
 
-Mình sẽ chích nguyên đoạn mình đọc được từ 1 [bài viết trên medium](https://medium.com/@kishlay.kumar/sql-indexing-why-is-it-important-836fe80837e6) của tác giả [Kishlay Kumar](https://medium.com/@kishlay.kumar):
+Mình sẽ trích nguyên đoạn mình đọc được từ 1 [bài viết trên medium](https://medium.com/@kishlay.kumar/sql-indexing-why-is-it-important-836fe80837e6) của tác giả [Kishlay Kumar](https://medium.com/@kishlay.kumar):
 
 > Indexes are special lookup tables that the database search engine can use to speed up data retrieval. Simply put, an index is a pointer to data in a table. An index in a database is very similar to an index in the back of a book.
 
@@ -26,7 +26,7 @@ Có nhiểu loại Index, có thể kể đến phổ biến nhất như **B-Tre
 
 Thông thường, khi nói đến Index mà không nhắc gì thêm thì mặc định là **B-Tree Index**, ở đây thì Index được tổ chức và lưu trữ dưới dạng cây, có root, branch, leaf (Chắc các bạn học qua cấu trúc dữ liệu sẽ không thấy mới, à lưu ý nó không phải Binary-Tree nhé, vì mỗi node có thể có nhiều hơn 2 lá).
 
-<img src="https://www.researchgate.net/publication/320087056/figure/fig2/AS:543648787820544@1506627379532/B-tree-Index-over-the-Name-Attribute-of-the-Employee-Relation.png"  width="100%" height="auto">
+<img src="https://www.researchgate.net/publication/320087056/figure/fig2/AS:543648787820544@1506627379532/B-tree-Index-over-the-Name-Attribute-of-the-Employee-Relation.png"  width="80%" height="auto">
 
 Cú pháp:
 
@@ -62,7 +62,7 @@ CREATE INDEX id_index ON table_name (column_name[, column_name…]) USING HASH;
 ALTER TABLE table_name ADD INDEX id_index (column_name[, column_name…]) USING HASH;
 ```
 
-<img src="https://i1.wp.com/tech.vtijapan.co.jp/wp-content/uploads/2019/09/hU4Tc.png?w=945&ssl=1"  width="100%" height="auto">
+<img src="https://i1.wp.com/tech.vtijapan.co.jp/wp-content/uploads/2019/09/hU4Tc.png?w=945&ssl=1"  width="80%" height="auto">
 
 Đầu tiên, **Hash table** là gì ? Hash table là một cấu trúc dữ liệu mà có thể map các cặp key-value dựa trên hash function để tính toán. **Hash Index** sử dụng Hash function để tính toán index vào một mảng các buckets, từ đó cải thiện tốc độ truy vấn. Hiểu đơn giản là sau khi được đánh Hash Index, ta sẽ có 1 Hash Table chứa các giá trị Index là kết quả của Hash Function khi truyển vào giá trị của trường được đánh và Value là con trỏ đến bản ghi. Khi thực hiện truy vấn, sử dụng Hash Function để tính toán giá trị Index, từ đó có được vị trí con trỏ của bản ghi cần lấy.
 
