@@ -29,6 +29,12 @@ const lists = [
     title: 'Chỉ mục (Index) trong SQL - Part 1',
     author: 'thong.nguyen van',
     date: 'September 09, 2023'
+  },
+  {
+    id: 'multithread-python',
+    title: 'Đa luồng trong Python (Cơ bản)',
+    author: 'thong.nguyen van',
+    date: 'September 12, 2023'
   }
 ]
 
