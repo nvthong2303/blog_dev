@@ -6,6 +6,7 @@ import Blog0 from './Pages/Blog0'
 import Notfound from './Pages/Notfound'
 import Blog1 from './Pages/Blog1.indexSql'
 import Blog2 from './Pages/Blog2.multithreadPython'
+import Blog3 from './Pages/Blog3.python1'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: '/blog/multithread-python',
     element: <Blog2 />
+  },
+  {
+    path: '/blog/learn-python-part1',
+    element: <Blog3 />
   }
 ])
 

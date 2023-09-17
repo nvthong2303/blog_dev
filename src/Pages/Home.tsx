@@ -32,9 +32,15 @@ const lists = [
   },
   {
     id: 'multithread-python',
-    title: 'Đa luồng trong Python (Cơ bản)',
+    title: 'Đa luồng trong Python',
     author: 'thong.nguyen van',
     date: 'September 12, 2023'
+  },
+  {
+    id: 'learn-python-part1',
+    title: 'Tự học Python - Part 1',
+    author: 'thong.nguyen van',
+    date: 'September 17, 2023'
   }
 ]
 
