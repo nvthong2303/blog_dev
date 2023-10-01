@@ -7,6 +7,9 @@ import Notfound from './Pages/Notfound'
 import Blog1 from './Pages/Blog1.indexSql'
 import Blog2 from './Pages/Blog2.multithreadPython'
 import Blog3 from './Pages/Blog3.python1'
+import Blog4 from './Pages/Blog4.python2'
+import Blog5 from './Pages/Blog5.python3'
+import Blog6 from './Pages/Blog6.python4'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,18 @@ const router = createBrowserRouter([
   {
     path: '/blog/learn-python-part1',
     element: <Blog3 />
+  },
+  {
+    path: '/blog/learn-python-part2',
+    element: <Blog4 />
+  },
+  {
+    path: '/blog/learn-python-part3',
+    element: <Blog5 />
+  },
+  {
+    path: '/blog/learn-python-part4',
+    element: <Blog6 />
   }
 ])
 

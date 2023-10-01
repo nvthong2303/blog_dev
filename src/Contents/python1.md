@@ -13,7 +13,7 @@ Sau đây là vài topic mà khi tìm hiểu một ngôn ngữ mình thường t
 - Python là ngôn ngữ lập trình cấp cao, thông dịch (mình sẽ viết 1 bài về phần này, nhớ là Python, JavaScript, ... là thông dịch còn Golang, C, C++, ... là biên dịch).
 - Python là ngôn ngữ lập trình hướng đối tượng, nhưng hỗ trợ lập trình hướng hàm (Functional Progamming), hướng thủ tục (Procedural Programming).
 - Python sẽ chậm hơn Java, C, C#, ... (đơn giản, tại thông dịch thì thường sẽ chậm hơn biên dịch khi hoạt động mà).
-- Python là ngôn ngữ đơn luồng, nhưng hỗ trợ đa luồng qua module **threading**, đa tiến trình qua module **multi-processing** (wow 🤔🤔).
+- Python là ngôn ngữ đơn luồng, nhưng hỗ trợ đa luồng qua module **threading** Mình đã có 1 bài viết về phần này ([Đa luồng trong Python](https://techie-guy.thong2303.io.vn/blog/multithread-python)), đa tiến trình qua module **multi-processing** (wow 🤔🤔).
 - Python sẽ quản lý các module và thư viện bằng pip (tương tự npm trong JS).
 - Virtual Environment, trong python cho phép khởi tạo môi trường ảo độc lập để cài đặt và sử dụng các module và thư viện khác nhau.
 - requirements.txt, Conda, pipenv, pyenv, Anaconda, ... Mình sẽ đề cập dần dần.
@@ -275,6 +275,8 @@ print(Person.__name__) ==> Person
 print(type(Person)) ==> <class 'type'>
 ```
 
+##### 1.1. class variable:
+
 **Variable trong class**: Các **class variable** là các variable được liên kết với class, mọi class con hoặc các instance của class đều truy cập được chúng. Có thể truy cập các **class variable** đó trực tiếp từ class hoặc qua phương thức **getattr**. **class variable** chính là những thuộc tính của instance lớp. Python là ngôn ngữ động (phía trên có nhắc đến), có thể gán **class variable** khi class đang chạy.
 
 ```
@@ -302,7 +304,7 @@ delattr(HtmlDocument, 'version')
 del HtmlDocument.version
 ```
 
-- Python lưu trữ các **class variable** trong \_\_dict**, Không thể thay đổi \*\*\_\_dict\*\*** trực tiếp mà phải qua các phương thức \*\*setattr\*\*, ...
+- Python lưu trữ các **class variable** trong **\_\_dict\_\_**, Không thể thay đổi **\_\_dict\_\_** trực tiếp mà phải qua các phương thức **setattr**, ...
 
 ```
 pprint(HtmlDocument.__dict__)
@@ -339,6 +341,10 @@ pprint(HtmlDocument.__dict__)
               'version': '5'})
 Rendering the Html doc...
 ```
+
+Tóm lại: **Một lớp là một đối tượng, là một instance của kiểu Class. Class variable là những thuộc tính của đối tượng Class.**
+
+##### 1.2. class method:
 
 **Method trong Class**: Các **class method** là một function được ràng buộc với 1 instance của class. Ví dụ dưới thì send() là một Function của class Request.
 
@@ -408,7 +414,7 @@ class Request:
         print('Sent', self)
 ```
 
-**method** chính là 1 instance của **class method**, một **method** có đối số đầu tiên là **self** chính là đối tượng mà nó ràng buộc. **Trong Python, khi định nghĩa 1 Function bên trong một class, nó hoàn toàn là 1 Function, Nhưng khi gọi nó qua 1 instance của class thì nó sẽ trở thành 1 method. Do đó method là một Function được ràng buộc với 1 instance của một lớp.**
+**method** chính là 1 instance của **class method**, một **method** có đối số đầu tiên là **self** chính là đối tượng mà nó ràng buộc. **Trong Python, khi định nghĩa 1 Function bên trong một class, nó hoàn toàn là 1 Function, Nhưng khi gọi nó qua 1 instance của class thì nó sẽ trở thành 1 method. Do đó method là một Function được ràng buộc với 1 instance của một lớp.** (hãy hiểu đơn giản, khi một hàm được gọi qua 1 đối tượng của 1 class, thì nó là 1 method)
 
 Đến đây thôi, muộn ròi mình đi ngủ mai còn đi làm, mình sẽ lên tiếp phần sau sớm nhất, cảm ơn các bạn đã đọc. 😁😁😁
 

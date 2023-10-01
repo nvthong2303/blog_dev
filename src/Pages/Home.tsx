@@ -38,9 +38,27 @@ const lists = [
   },
   {
     id: 'learn-python-part1',
-    title: 'Tự học Python - Part 1',
+    title: 'Tự học Python - Part 1 - Classes & Object',
     author: 'thong.nguyen van',
     date: 'September 17, 2023'
+  },
+  {
+    id: 'learn-python-part2',
+    title: 'Tự học Python - Part 2 - Classes & Object',
+    author: 'thong.nguyen van',
+    date: 'September 29, 2023'
+  },
+  {
+    id: 'learn-python-part3',
+    title: 'Tự học Python - Part 3 - Special Methods',
+    author: 'thong.nguyen van',
+    date: 'September 29, 2023'
+  },
+  {
+    id: 'learn-python-part4',
+    title: 'Tự học Python - Part 4 - Properties',
+    author: 'thong.nguyen van',
+    date: 'September 30, 2023'
   }
 ]
 
@@ -78,9 +96,9 @@ function Home () {
           muốn viết lại (để ôn tập lại hoặc trong lúc tự học một thứ mới mẻ gì
           đó) một cách dễ hiểu hơn cho các bạn mới bắt đầu lập trình có thể tham
           khảo, các chủ để của mình thường thì sẽ xoay quanh JavaScript, Golang,
-          một chút devOps và vài chủ đề khác, dĩ nhiên là đều ở mức cơ bản thôi,
-          mọi người đọc và cho mình xin góp ý để chúng ta cùng cải thiện, mình
-          cảm ơn.
+          Python một chút devOps và vài chủ đề khác, dĩ nhiên là đều ở mức cơ
+          bản thôi, mọi người đọc và cho mình xin góp ý để chúng ta cùng cải
+          thiện, mình cảm ơn.
         </Typography>
 
         <hr style={{ marginTop: '40px' }} />
