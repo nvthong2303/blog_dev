@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_dev=self.webpackChunkblog_dev||[]).push([[411],{1411:function(e,s,a){e.exports=a.p+"static/media/golang2.2f84f0452708ab68f26d.md"}}]);

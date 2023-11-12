@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_dev=self.webpackChunkblog_dev||[]).push([[890],{9890:function(e,b,s){e.exports=s.p+"static/media/python5.be4dbfdab3e26b12bb95.md"}}]);
