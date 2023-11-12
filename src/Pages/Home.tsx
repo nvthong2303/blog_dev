@@ -59,6 +59,24 @@ const lists = [
     title: 'Tự học Python - Part 4 - Properties',
     author: 'thong.nguyen van',
     date: 'September 30, 2023'
+  },
+  {
+    id: 'learn-python-part5',
+    title: 'Tự học Python - Part 5 - Single Inheritance',
+    author: 'thong.nguyen van',
+    date: 'October 03, 2023'
+  },
+  {
+    id: 'golang-part1',
+    title: 'Chia sẻ 1 chút về Golang',
+    author: 'thong.nguyen van',
+    date: 'November 10, 2023'
+  },
+  {
+    id: 'golang-part2',
+    title: 'Cùng tìm Goroutine và channel trong Golang',
+    author: 'thong.nguyen van',
+    date: 'November 11, 2023'
   }
 ]
 

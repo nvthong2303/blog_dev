@@ -10,6 +10,8 @@ import Blog3 from './Pages/Blog3.python1'
 import Blog4 from './Pages/Blog4.python2'
 import Blog5 from './Pages/Blog5.python3'
 import Blog6 from './Pages/Blog6.python4'
+import Blog7 from './Pages/Blog7.python5'
+import Blog8 from './Pages/Blog8.golang1'
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
   {
     path: '/blog/learn-python-part4',
     element: <Blog6 />
+  },
+  {
+    path: '/blog/learn-python-part5',
+    element: <Blog7 />
+  },
+  {
+    path: '/blog/golang-part1',
+    element: <Blog8 />
   }
 ])
 
