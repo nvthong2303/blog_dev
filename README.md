@@ -1,46 +1,7 @@
-# Getting Started with Create React App
+# Chào mừng đến với Blog của Thông
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Chào mừng các bạn đến với một Blog phủ bụi, cỏ mọc um tùm của mình. Mình tạo ra trang Blog này với mục đích chính là để học tập và chia sẻ, hy vọng các bạn sẽ tìm kiếm được một điều gì đó ở đây.
 
-## Available Scripts
+Mình là Thông, cựu sinh viên CNTT Bách Khoa Hà Nội (K63), hiện đang là một kỹ sư phần mềm. Rất vui được các bạn ghé thăm.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thật ra đây toàn là những thứ mà nhiều người đã viết, nhưng mình vẫn muốn viết lại (để ôn tập lại hoặc trong lúc tự học một thứ mới mẻ gì đó) một cách dễ hiểu hơn cho các bạn mới bắt đầu lập trình có thể tham khảo. Các chủ đề của mình thường xoay quanh JavaScript, Golang, Python, một chút DevOps và vài chủ đề khác. Dĩ nhiên là đều ở mức cơ bản thôi. Mọi người đọc và cho mình xin góp ý để chúng ta cùng cải thiện, mình cảm ơn.
