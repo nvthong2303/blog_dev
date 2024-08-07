@@ -49,13 +49,13 @@ Với bất kỳ ngôn ngữ nào thì cũng phải lưu tâm đến data types,
 - Basic type: Number, String, Boolean.
 - Aggregate type: Array, Struct.
 - Reference type: Pointer, Slices, Maps, Functions, Channels.
-- Interface type:
+- Interface type
 
-| Datatype    | Description                                                                                                                                                                                                  | Example                                        |
+| Datatype | Description | Example |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
-| **Number**     | Trong Go, có nhiều kiểu dữ liệu số (na ná C đó), từ int (int8, int 16, int32, int64, uint8, uint16, ...), float (float32, float64), complex (complex64, complex128).                                                                                                                                                                                                    | Số nguyên, số thực và số phức.                             |
-| String       | Kiểu chuỗi như những ngôn ngữ khác.                                                                                                                                                                                                       | "dev", "golang", ...                          |
-| Boolean | Kiểu boolean như những ngôn ngữ khác. | true, false, ...|
+|**Number**| Trong Go, có nhiều kiểu dữ liệu số (na ná C đó), từ int (int8, int 16, int32, int64, uint8, uint16, ...), float (float32, float64), complex (complex64, complex128). | Số nguyên, số thực và số phức. |
+| String | Thui nhỉ 😂😂😂. | "dev", "golang", ...|
+| Boolean | Thui nhỉ 😂😂😂. | true, false, ...|
 | Array | Kiểu dữ liệu mảng (cùng kiểu) và kích thước cố định. | var arr [5]int, ...|
 | Slices | Khác với array, slice là một mảng động có kích thước linh hoạt. | var slice []int, ...|
 | Maps | Kiểu dữ liệu dưới dạng cặp key/value. | var m map[string]int, ...|

@@ -47,7 +47,8 @@ const useStyles = makeStyles({
     '@media screen and (max-width: 480px)': {},
     '@media screen and (min-width: 480px) and (max-width: 1199px)': {},
     '@media screen and (min-width: 1200px)': {},
-    marginLeft: '32px !important'
+    marginLeft: '32px !important',
+    marginBottom: '0 !important'
   },
   rightIcon: {
     '@media screen and (max-width: 480px)': {},

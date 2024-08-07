@@ -40,7 +40,7 @@ const Layout = ({ children }: any) => {
       <Header />
       {windowSize.innerWidth > 480 ? (
         <Grid container spacing={0} className={classes.body}>
-          <Grid item xs={2.5}>
+          <Grid item xs={2.5} sx={{ backgroundColor: '#f0f8ff' }}>
             <Navbar fullWidth={false} />
           </Grid>
           <Grid item xs={9.5}>
